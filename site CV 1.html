@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CV</title>
+    <meta charset=""utf-8>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="cv.css">
+<style>
+/* style du cv avec CSS */
+/*STYLES GENERAUX*/
+/*style sur mobiles*/
+*{
+    font-family: Avenir, sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+body{
+    background: #ffffff;
+}
+
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*HEADER*/
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+
+header h1{
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+/*SECTIONS*/
+section{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px lightgrey;
+    background-color: whitesmoke;
+}
+
+section h2{
+    margin: 20px 0;
+    width: 90%;
+}
+
+section > div{
+    width: 90%;
+}
+
+.photo{
+    text-align:center;
+}
+
+.photo img{
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 50%;
+    margin-top: -80px;
+}
+
+.pres{
+    border-bottom: 2px dashed lightgrey;
+}
+
+/* telechargement CV*/
+.pres a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: white;
+    background-color: lightslategrey;
+    box-shadow: 0px 0px 10px lightgrey;
+    border-radius: 5px;
+
+}
+
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+.contact-flex p:last-child{
+    flex: 0 0 60%;
+}
+
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid lightgray;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+
+.exp h3{
+    font-size: 1.2em;
+}
+
+.exp h4{
+    font-size: 1em;
+    font-weight: normal;
+}
+/*Professionnelles*/
+.comp{
+    display: flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+
+.comp b{
+    flex: 0 0 40%;
+}
+
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: grey;
+    border-bottom: 1px lightgrey;
+}
+
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+/*Personnelles*/
+.c85{
+    width: 85%;
+    background-color: #8B8;
+}
+.c90{
+    width: 90%;
+    background-color: #8B8;
+}
+.c95{
+    width: 95%;
+    background-color: #8B8;
+}
+.c100{
+    width: 100%;
+    background-color: #8B8;
+    border-radius: 5px;
+}
+
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: white;
+}
+/*CENTRE DINTERET*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px grey;
+}
+/* Partie sur bureau*/
+@media screen and (min-width: 980px) {
+    section{
+        width: 80%;
+        box-shadow: 0px 0px 10px #706f6f;
+    }
+    a:hover{
+        color: rgb(233, 180, 46);
+    }
+    header h1{
+        width: 80%;
+    }
+}
+
+
+
+/*bouton dl CV*/
+.pres a:hover{
+    color: #666;
+    background-color: #fff;
+    border: 2px solid #666;
+    box-shadow: 0px 0px 20px #666;
+}
+
+
+
+.interet{
+    flex: 0 1 25%;
+}
+</style>
+</head>
+<body>
+    <header> 
+        <h1>CV de Arnaud PAJANY</h1>
+    </header>
+
+<section>
+    <div class="pres">
+        <h2>Presentation</h2>
+        <p>diplomé d'un Baccalaureat général</p>
+        <a href="#" download> Télécharger mon CV</a>
+    </div>
+
+    <div class="Contact">
+        <h2>Informations de Contact</h2>
+        <div class="contact-flex">
+            <p>NOM et prénom:</p>
+            <p> PAJANY Arnaud</p>
+        </div>
+        <div class="contact-flex">
+            <p>Adresse:</p>
+            <p> 6 rue Youri Gagarine, 78280 Guyancourt</p>
+        </div>
+        <div class="contact-flex">
+            <p>Téléphone:</p>
+            <p> 06 20 75 09 60</p>
+        </div>
+        <div class="contact-flex">
+            <p>Mail:</p>
+            <p><a href="mailto:a.pajany@ecole-ipssi.net">a.pajany@ecole-ipssi.net</a></p>
+        </div>
+        <div class="contact-flex">
+            <p>Permis:</p>
+            <p> B </p>
+        </div>
+    </div>
+</section>
+<section>
+    <h2> Expériences professionnelles </h2>
+    <div class="exp">
+        <div class="exp-info">
+            <h3>Stage d'observation 3eme</h3>
+            <h4>Centre Louis Pasteur</h4>
+            <h5>Decembre 2019- Decembre 2019</h5>
+        </div>
+        <div class="exp-desc">
+            <p>Notions sur les bases d'un pc, fonctionnement, matériel, logiciel </p>
+        </div>
+    </div>
+</section>
+<section>
+    <h2>Formation</h2>
+    <div class="exp">
+        <div class="exp-info">
+            <h3>Collège Ariane</h3>
+            <h4>2016 - 2020</h4>
+        </div>
+        <div class="exp-desc">
+            <p>blablabla</p>
+        </div>
+        <div class="exp-info">
+            <h3>Lycée de Villaroy</h3>
+            <h4>2020 - 2023</h4>
+        </div>
+        <div class="exp-desc">
+            <p>blablabla</p>
+    </div>
+</section>
+<section>
+    <h2>Compétences</h2>
+    <h3 class="h3gauche">professionnelles</h3>
+    <div class="comp">
+        <p> HTML / CSS</p>
+        <div class="conteneur-barre"><span class="barre" c0></span></div>
+    </div>
+    <div class="comp">
+        <p> HTML / CSS</p>
+        <div class="conteneur-barre"><span class="barre" c0></span></div>
+    </div>
+    <div class="comp">
+        <p> HTML / CSS</p>
+        <div class="conteneur-barre"><span class="barre" c0></span></div>
+    </div>
+    <div class="comp">
+        <p> HTML / CSS</p>
+        <div class="conteneur-barre"><span class="barre" c0></span></div>
+    </div>
+    <h3 class="h3gauche">personnelles</h3>
+    <div class="comp2">
+        <p>Serieux</p>
+        <p>95%</p>
+        <div class="conteneur-barre2"><span class="barre" c95></span></div>
+     </div>
+    <div class="comp2">
+        <p>Créatif</p>
+        <p>85%</p>
+        <div class="conteneur-barre2"><span class="barre" c85></span></div>
+     </div>
+    <div class="comp2">
+        <p>Esprit d'équipe</p>
+        <p>90%</p>
+        <div class="conteneur-barre2"><span class="barre" c90></span></div>
+     </div>
+    <div class="comp2">
+        <p>Autonome</p>
+        <p>90%</p>
+        <div class="conteneur-barre2"><span class="barre" c90></span></div>
+     </div>
+</section>
+
+<section>
+    <h2>Centre d'intérêt</h2>
+    <figure class="interet">
+        <img src="cuisine.jpg" alt="Cuisine">
+        <figcaption>Cuisine</figcaption>
+    </figure>
+    <figure class="interet">
+        <img src="basketball.png" alt="Basketball">
+        <figcaption>Basketball</figcaption>
+    </figure>
+    <figure class="interet">
+        <img src="videogames.jpg" alt="videogames">
+        <figcaption>Jeux vidéos</figcaption>
+    </figure>    
+</section>
+</body>
+</html>
